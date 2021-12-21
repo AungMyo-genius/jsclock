@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock and Nav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="choose" style="background-color: #fff;" type="white"></li>
+            <li class="choose" style="background-color: #272727;" type="black"></li>
+            <li class="choose" style="background-color: #1597E5;" type="blue"></li>
+            <li class="choose" style="background-color: #77D970;" type="green"></li>
+            <li class="choose" style="background-color: #FF5C58;" type="red"></li>
+        </ul>
+
+        <button class="icon">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </button>
+    </nav>
+
+    <div class="clock-container my-3">
+        <div class="analog">
+            <div class="outer-clock-face">
+                <div class="marking marking-one"></div>
+                <div class="marking marking-two"></div>
+                <div class="marking marking-three"></div>
+                <div class="marking marking-four"></div>
+            </div>
+
+            <div class="inner-clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+                <div class="center-circle"></div>
+            </div>
+
+            <span id="amorpm">AM</span>
+        </div>
+
+        <div class="p-container my-4">
+            <div class="day-container">
+                <span class="days select">Sun</span>
+                <span class="days">Mon</span>
+                <span class="days">Tue</span>
+                <span class="days">Wed</span>
+                <span class="days">Thur</span>
+                <span class="days">Fri</span>
+                <span class="days">Sat</span>
+            </div>
+            <div class="date">OCT <span class="badge">13</span></div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
